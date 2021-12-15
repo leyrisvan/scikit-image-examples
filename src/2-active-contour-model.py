@@ -4,9 +4,9 @@ from skimage.color import rgb2gray
 from skimage import data
 from skimage.filters import gaussian
 from skimage.segmentation import active_contour
-from img import mydata as my
+from skimage import io
 
-img = my.noel()
+img = io.imread('models/noel.jpg')
 img = rgb2gray(img)
 radius = 180
 localization = [450, 200]

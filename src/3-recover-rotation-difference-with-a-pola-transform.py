@@ -5,12 +5,12 @@ from skimage import data
 from skimage.registration import phase_cross_correlation
 from skimage.transform import warp_polar, rotate, rescale
 from skimage.util import img_as_float
-from img import mydata as my
+from skimage import io
 
 
 radius = 705
 angle = 35
-image = my.hiena()
+image = io.imread('models/hiena.jpg')
 image = img_as_float(image)
 rotated = rotate(image, angle)
 image_polar = warp_polar(image, radius=radius, multichannel=True)

@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from img import mydata as my
 from skimage import color, data, restoration
+from skimage import io
 
-couple = color.rgb2gray(my.boneco())
+couple = color.rgb2gray(io.imread('models/boneco.jpg'))
 from scipy.signal import convolve2d as conv2
 psf = np.ones((5, 5)) / 25
 couple = conv2(couple, psf, 'same')
