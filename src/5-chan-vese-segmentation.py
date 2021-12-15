@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
 from skimage import img_as_float
 import skimage.segmentation
-from img import mydata as my
+from skimage import io
 
-
-image = img_as_float(my.coelho())
+image = img_as_float(io.imread('models/coelho.jpg'))
 image = image.sum(-1)
 # print(image)
 # Feel free to play around with the parameters to see how they impact the result
