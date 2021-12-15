@@ -6,8 +6,9 @@ from skimage import io
 
 
 
-grayscale_image = img_as_float(io.imread('..imagem/models/gorro.png')[::2, ::2])
+grayscale_image = img_as_float(io.imread('models/gorro.jpg')[::2, ::2])
 image = color.gray2rgb(grayscale_image)
+image = color.rgb2gray(image)
 
 red_multiplier = [1, 0, 1]
 yellow_multiplier = [1, 1, 0]
