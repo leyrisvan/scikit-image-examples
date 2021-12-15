@@ -4,26 +4,25 @@ root = "C:/Users/leyrisvan/Processamento-de-imagens/scikit-image-examples/img/mo
 
 
 def gorro():
-    img = io.imread(root + 'gorro.png')
-    return img
+    imagem = io.imread(root + 'gorro.png')
+    return imagem
 
 
 def boneco():
-    img = io.imread(root + 'boneco.png')
-    return img
+   imagem = io.imread(root + 'boneco.png')
+    return imagem
 
 
 def flamengo():
-    img = io.imread(root + 'flamengo.png')
-    return img
+   imagem = io.imread(root + 'flamengo.png')
+    return imagem
 
 
 def noel():
-    img = io.imread(root + 'noel.png')
-    return img
-
+    imagem= io.imread(root + 'noel.png')
+    return imagem
 
 def hiena():
-    img = io.imread(root + 'hiena.png')
-    return img
+   imagem = io.imread(root + 'hiena.png')
+    return imagem
 
